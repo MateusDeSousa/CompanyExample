@@ -6,8 +6,14 @@ let package = Package(
     name: "CompanyExample",
     products: [
         .library(
-            name: "CompanyExample",
-            targets: ["Extensions", "Network", "UIComponents"]),
+            name: "Feature1",
+            targets: ["Extensions"]),
+        .library(
+            name: "Feature2",
+            targets: ["Network"]),
+        .library(
+            name: "Feature3",
+            targets: ["UIComponents"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
